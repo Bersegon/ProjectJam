@@ -2,7 +2,7 @@ Player object:
   -stats
   -movements
   -shoot
-  -roll/dodge
+  -teleport
 Map generator
 Enemy object:
   -stats
