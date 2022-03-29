@@ -1,11 +1,11 @@
 Player object:
-  -stats
-  -movements
+  +stats
+  +movements
   -shoot
   -teleport
 Map generator
 Enemy object:
-  -stats
+  +stats
   -pathfinding
   -inherited objects(boss, miniboss,etc)
  items
