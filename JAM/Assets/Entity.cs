@@ -19,15 +19,17 @@ public class Entity : MonoBehaviour
 }
 
 public class Player : Entity
-{   
-    public Player(Rigidbody2D P) { Body = P; }
+{    public Player(Rigidbody2D P) { Body = P; }
+    public float directiony;
+    public float directionx;
     public void Update()
     {
-        float directionx = Input.GetAxisRaw("Horizontal");
-        float directiony = Input.GetAxisRaw("Vertical");
+        directionx = Input.GetAxisRaw("Horizontal");
+        directiony = Input.GetAxisRaw("Vertical");
         Body.velocity = new Vector2(directionx * 7f, Body.velocity.y);
         Body.velocity = new Vector2(Body.velocity.x, directiony * 7f);
     }
+    
 }
 
 
